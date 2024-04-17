@@ -1,2 +1,5 @@
-package Enum;public enum Dieta {
+package Enum;
+
+public enum Dieta {
+    CARNIVORO,HERBIVORO,OMNIVORO
 }
