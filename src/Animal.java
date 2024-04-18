@@ -24,6 +24,7 @@ public class Animal extends SerVivo{
             this.inteligencia = inteligencia;
         } else {
             System.out.println("🥋❌ A inteligência deve estar entre 0 e 100.");
+            throw new IllegalArgumentException();
         }
 
         this.alimentacaoDieta = alimentacaoDieta;

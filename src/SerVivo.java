@@ -1,4 +1,4 @@
-public class SerVivo {
+public abstract class SerVivo {
     private String Nome;
     private String especie;
     private String pais;
@@ -27,7 +27,9 @@ public class SerVivo {
         this.idade = idade;
     }
 
-    public void exibirDetalhes(){
+    //deve ser uma classe abstrata para que as classes filhas obrigatoriamente tenham este metodo
+
+    public /*abstract*/ void exibirDetalhes(){
         System.out.println("🔡Nome: " + getNome());
         System.out.println("🐁🪴🐛Especie: " + getEspecie());
         System.out.println("Pais: " + getPais());
